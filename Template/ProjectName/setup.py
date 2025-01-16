@@ -50,7 +50,7 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Scientific/Engineering :: Information Analysis',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
+        # 'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
@@ -58,9 +58,9 @@ setup(
     ],
     keywords='topsis mcdm multi-criteria decision-making ranking analysis',
     project_urls={
-        'Documentation': 'https://github.com/Prerit-Bhagat/PYPI_Package#readme',  # Replace with your GitHub documentation link
+        # 'Documentation': 'https://github.com/Prerit-Bhagat/PYPI_Package#readme',  # Replace with your GitHub documentation link
         'Source Repository': 'https://github.com/Prerit-Bhagat/PYPI_Package',  # Replace with your actual GitHub repository link
-        'Bug Tracker': 'https://github.com/Prerit-Bhagat/PYPI_Package/issues',  # Replace with your issue tracker
+        # 'Bug Tracker': 'https://github.com/Prerit-Bhagat/PYPI_Package/issues',  # Replace with your issue tracker
     },
     python_requires='>=3.7',
 )
