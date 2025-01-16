@@ -58,9 +58,9 @@ setup(
     ],
     keywords='topsis mcdm multi-criteria decision-making ranking analysis',
     project_urls={
-        'Documentation': 'https://github.com/A-Sharan1/TOPSIS_Prerit_102217030#readme',  # Replace with your GitHub documentation link
-        'Source Repository': 'https://github.com/A-Sharan1/',  # Replace with your actual GitHub repository link
-        'Bug Tracker': 'https://github.com/A-Sharan1/issues',  # Replace with your issue tracker
+        'Documentation': 'https://github.com/Prerit-Bhagat/PYPI_Package#readme',  # Replace with your GitHub documentation link
+        'Source Repository': 'https://github.com/Prerit-Bhagat/PYPI_Package',  # Replace with your actual GitHub repository link
+        'Bug Tracker': 'https://github.com/Prerit-Bhagat/PYPI_Package/issues',  # Replace with your issue tracker
     },
     python_requires='>=3.7',
 )
