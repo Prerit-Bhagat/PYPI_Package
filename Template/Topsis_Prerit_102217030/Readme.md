@@ -31,7 +31,7 @@ The first column is the identifier for alternatives.
 The subsequent columns contain numeric data for each criterion.
 
 If you want to apply TOPSIS with weights [1, 1, 1, 2] and impacts [+, +, -, +], use:
-topsis data.csv "1,1,1,2" "+,+,-,+" result.csv
+python topsis data.csv "1,1,1,2" "+,+,-,+" result.csv
 
 This will generate a result file result.csv with the calculated TOPSIS scores and rankings.
 <!-- ## Functions -->
