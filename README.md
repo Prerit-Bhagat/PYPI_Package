@@ -1,78 +1,58 @@
-# PyPI Publishing Template
+# TOPSIS Implementation
 
-This repository contains a template and detailed instructions for publishing your Python package to PyPI. Follow the steps below to get your package live on PyPI.org.
+This package provides a Python implementation of the Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method for multi-criteria decision analysis.
 
-## Steps to Publish Your Package to PyPI
+---
 
-### 1. Prepare Your Project
+## Features
+- **Ease of Use**: Simple and clear implementation of the TOPSIS algorithm.
+- **Weighted Decision Making**: Allows users to define weights for each criterion.
+- **Impact Analysis**: Accounts for both positive and negative impacts of criteria.
+- **Command-Line Interface**: Execute TOPSIS directly from the terminal with input and output files.
 
-1. Ensure your project contains the necessary files:
-   - `setup.py`
-   - `README.md`
-   - Any other required files (e.g., `LICENSE`, `.gitignore`)
+---
 
-2. Download the template and edit the files (Refer to the link given in resource section for the video explanation):
-    
+## Installation
 
-### 2. Create an Account on PyPI
+Install the package directly from PyPI:
 
-1. Go to [PyPI.org](https://pypi.org/account/register/) and create an account.
+```In Shell:
+pip install TOPSIS_Prerit_102217030
+```
 
-### 3. Get Your PyPI API Token
+---
 
-1. Log in to your PyPI account.
-2. Go to your account settings.
-3. Navigate to the "API tokens" section.
-4. Click on "Add API token".
-5. Provide a name for your token and specify the desired scope (e.g., "Entire account").
-6. Click "Add token".
-7. Copy the generated token and keep it secure.
+## Usage
 
-### 4. Build Your Package
+Run the TOPSIS analysis using the command-line interface:
 
-1. Make sure you have the latest versions of `setuptools` and `wheel` installed:
-    ```bash
-    pip install --upgrade setuptools wheel
-    ```
+```Command Line:
+topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>
+```
 
-2. Build your package:
-    ```bash
-    python setup.py sdist bdist_wheel
-    ```
+### Example
 
-### 5. Install Twine
+Suppose you have a CSV file `data.csv` containing a decision matrix where:
 
-1. Install Twine if you haven't already:
-    ```bash
-    pip install twine
-    ```
+- The first column is the identifier for alternatives.
+- The subsequent columns contain numeric data for each criterion.
 
-### 6. Upload Your Package
+To apply TOPSIS with weights `[1, 1, 1, 2]` and impacts `[+, +, -, +]`, run:
 
-1. Use Twine to upload your package to PyPI:
-    ```bash
-    twine upload dist/*
-    ```
+```bash
+topsis_Prerit_102217030 data.csv "1,1,1,2" "+,+,-,+" result.csv
+```
 
-2. When prompted, enter your username (or `__token__` for token-based authentication) and your API token as the password.
+This will generate a result file `result.csv` with the calculated TOPSIS scores and rankings.
 
-### 7. Verify Your Upload
+---
 
-1. Check your package on [PyPI.org](https://pypi.org/) to ensure it has been uploaded successfully.
+## Files in the Package
 
-## Template Files
-
-- `setup.py`: Contains metadata and configuration for your package.
-- `README.md`: Your project's readme file (this file).
+- `setup.py`: Contains metadata and configuration for the package.
+- `README.md`: This file, providing an overview of the package.
 - Additional files like `LICENSE` and `.gitignore` as needed.
 
-For more information and to download the template, visit the [GitHub repository](https://github.com/A-Sharan1/PYPI-Publishing-Template).
+---
 
-## Resources
-
-- [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/)
-- [PyPI Documentation](https://pypi.org/help/)
-- [Twine Documentation](https://twine.readthedocs.io/)
-- [Youtube Video](https://youtu.be/6NnnRDTOObw)
-
-Happy publishing!
+Happy analyzing with TOPSIS!
