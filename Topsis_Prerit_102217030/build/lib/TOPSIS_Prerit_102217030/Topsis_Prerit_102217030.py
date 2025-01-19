@@ -57,17 +57,18 @@ def topsis(input_data, weights, impacts):
     scores = calculate_topsis_scores(distance_to_best, distance_to_worst)
     return scores
 
-def main():
+def run(df, weights, impact, output):
     """Handle CLI input and perform TOPSIS analysis."""
     if len(sys.argv) != 5:
         print("Usage: python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>")
         print("Example: python 1015579.py 1015579-data.xlsx \"1,1,1,2\" \"+,+,-,+\" 1015579-result.xlsx")
         exit(1)
 
-    input_file = sys.argv[1]
-    weights = list(map(float, sys.argv[2].strip('"').split(',')))
-    impacts = [1 if impact == '+' else 0 for impact in sys.argv[3].strip('"').split(',')]
-    result_file = sys.argv[4]
+    input_file = df
+    impacts=impact
+    # weights = list(map(float, sys.argv[2].strip('"').split(',')))
+    # impacts = [1 if impact == '+' else 0 for impact in sys.argv[3].strip('"').split(',')]
+    result_file = output
 
     # Read input file
     if not os.path.exists(input_file):
@@ -115,5 +116,7 @@ def main():
         print(f"Error saving results: {e}")
         exit(1)
 
-if __name__ == '__main__':
-    main()
+
+
+# if __name__ == '__main__':
+    # main()

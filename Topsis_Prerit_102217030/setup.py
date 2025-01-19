@@ -32,8 +32,8 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text(encoding="utf-8")  # Explicit encoding for compatibility
 
 setup(
-    name='TOPSIS_Prerit_102217030',  # Package name must be unique on PyPI
-    version='1.0.1',  # Initial release version
+    name='Topsis_Prerit_102217030',  # Package name must be unique on PyPI
+    version='1.0.8',  # Initial release version
     packages=find_packages(),  # Automatically finds Python packages in the current directory
     install_requires=[
         'pandas>=1.0.0',  # Ensures compatibility with modern Pandas
@@ -67,7 +67,7 @@ setup(
     include_package_data=True,  # Ensures non-code files like README are included
     entry_points={
         'console_scripts': [
-            'topsis=TOPSIS_Prerit_102217030.topsis:main',  # Adds CLI command to the script
+            'topsis=Topsis_Prerit_102217030.main:main',  # Adds CLI command to the script
         ],
     },
 )
