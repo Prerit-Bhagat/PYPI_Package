@@ -59,4 +59,4 @@ This will generate a result file `result.csv` with the calculated TOPSIS scores 
 ---
 
 Happy analyzing with TOPSIS!
-## Note This is currently under development
+## Beta - Version
