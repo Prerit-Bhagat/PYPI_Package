@@ -17,7 +17,7 @@ This package provides a Python implementation of the Technique for Order of Pref
 Install the package directly from PyPI:
 
 ```In Shell:
-pip install TOPSIS_Prerit_102217030
+pip install Topsis-Prerit-102217030==1.0.8
 ```
 
 ---
